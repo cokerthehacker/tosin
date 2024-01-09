@@ -42,8 +42,18 @@ function submitForm() {
 }
 
 function proceedToPicture() {
-    // Display a picture or navigate to a new page
-    alert('Proceeding to picture! 📷'); // You can replace this with your actual implementation
+    const pictureContainer = document.createElement('div');
+    pictureContainer.id = 'pictureContainer';
+    
+    const picture = document.createElement('img');
+    picture.src = 'poll.webp';
+    picture.alt = 'Picture';
+
+    pictureContainer.appendChild(picture);
+    document.body.appendChild(pictureContainer);
+
+    // Optionally, you can remove the login and message pages
+    document.getElementById('container').style.display = 'none';
 }
 
 function showForfeit() {
