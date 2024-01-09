@@ -50,7 +50,7 @@ function proceedToPicture() {
 
     const footer = document.createElement('div');
     footer.classList.add('footer');
-    footer.innerHTML = '2024-♾️ coker ltd. All rights reserved. / <a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>';
+    footer.innerHTML = '© 2024-♾️ coker ltd. All rights reserved. / <a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>';
 
     pictureContainer.appendChild(footer);
     document.body.appendChild(pictureContainer);
