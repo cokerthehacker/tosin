@@ -5,9 +5,10 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url('roses.webp'); 
+    background-image: url('roses.webp'); /* Set default background to roses.webp */
     background-size: cover;
     background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out; /* Transition for background image change */
 }
 
 #pictureContainer {
@@ -16,29 +17,32 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 9999;
+    z-index: 9999; /* Make sure it's above other elements */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-#pictureContainer img {
-    width: 100%;
-    height: calc(100% - 30px); /* Adjust the height to leave space for the footer */
-    object-fit: cover;
+    justify-content: space-between; /* Align content at the bottom */
+    padding: 20px; /* Add some padding to the container */
+    box-sizing: border-box; /* Include padding in the total width/height */
 }
 
 .footer {
     text-align: center;
-    color: white;
+    color: white; /* Text color */
+    background-color: #333; /* Very dark grey background color */
+    position: relative; /* Ensure positioning relative to its container */
+    margin-bottom: 20px; /* Add margin to the bottom of the footer */
+    padding: 10px; /* Add padding to the footer */
 }
 
 .footer a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+}
+
+/* Additional styling for the container when background changes */
+body.has-background-change {
+    background-image: url('tosin.webp'); /* Change background to poll.webp */
 }
 
 #container {
