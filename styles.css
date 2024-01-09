@@ -25,6 +25,17 @@ body {
     object-fit: cover; /* Ensure the image covers the container */
 }
 
+.footer {
+    text-align: center;
+    color: white; /* Adjust color as needed */
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
 #container {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
