@@ -8,7 +8,6 @@ function login() {
         document.getElementById('messagePage').style.display = 'block';
         document.getElementById('usernameDisplay').innerText = 'Toshinshinnn 💘';
         document.getElementById('message').innerText = 'Will you be my Valentine? 🦦';
-
     } 
 }
 
@@ -17,12 +16,17 @@ function submitForm() {
 
     if (selectedResponse) {
         const response = selectedResponse.value;
-        document.getElementById('message').innerText = `Yayy! 14th it is. Can’t wait to be with you my love ♾❤`;
-        document.getElementById('message').innerText.add('animate-swell');
+        const messageElement = document.getElementById('message');
+        
+        // Add a CSS class to trigger the animation
+        messageElement.classList.add('animate-swell');
+
+        // Set the text content with the response
+        messageElement.innerText = `Yayy! 14th it is. Can’t wait to be with you my love ♾❤`;
 
         // Remove the CSS class after a delay (1 second in this example)
         setTimeout(() => {
-            document.getElementById('message').innerText.remove('animate-swell');
+            messageElement.classList.remove('animate-swell');
         }, 1000);
     } else {
         alert('Please select a response.');
