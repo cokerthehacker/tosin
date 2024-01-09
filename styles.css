@@ -10,6 +10,21 @@ body {
     background-repeat: no-repeat;
 }
 
+#pictureContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* Make sure it's above other elements */
+}
+
+#pictureContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
 #container {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
