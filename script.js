@@ -46,7 +46,7 @@ function proceedToPicture() {
     pictureContainer.id = 'pictureContainer';
     
     const picture = document.createElement('img');
-    picture.src = 'tosin.webp';
+    picture.src = 'poll.webp';
     picture.alt = 'Picture';
 
     const footer = document.createElement('div');
@@ -57,7 +57,7 @@ function proceedToPicture() {
     pictureContainer.appendChild(footer);
     document.body.appendChild(pictureContainer);
 
-    // Optionally, you can remove the login and message pages
+    // Hide the existing container (if it's still visible)
     document.getElementById('container').style.display = 'none';
 }
 
