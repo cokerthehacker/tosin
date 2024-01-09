@@ -86,3 +86,21 @@ button:hover {
 .animate-swell {
     animation: swell 1s ease-in-out;
 }
+
+
+#proceedButton {
+    background-color: green; /* Adjust the color as needed */
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    display: none; /* Initially hide the proceed button */
+}
+
+#proceedButton:hover {
+    background-color: darkgreen; /* Darker shade on hover */
+}
