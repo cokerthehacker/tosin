@@ -46,7 +46,7 @@ function proceedToPicture() {
     pictureContainer.id = 'pictureContainer';
     
     const picture = document.createElement('img');
-    picture.src = 'poll.webp';
+    picture.src = 'tosin.webp';
     picture.alt = 'Picture';
 
     const footer = document.createElement('div');
